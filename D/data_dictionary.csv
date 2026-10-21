@@ -1,0 +1,35 @@
+variable,description,type,values,missing_%
+collision_year,Year of the collision (2024 or 2025),Categorical,2 categories,0.0
+datetime,Date and time of the collision,Date/time,01 Jan 2024 to 31 Dec 2025,0.0
+severity,Collision severity: worst injury in the collision,Categorical,3 categories,0.0
+KSI,"Target: 1 = killed or seriously injured, 0 = slight",Categorical,2 categories,0.0
+KSI_adjusted,Probability of KSI after DfT severity adjustment,Numeric,0 to 1,0.0
+collision_injury_based,"1 = severity from injury-based reporting (CRASH), 0 = officer judgement",Categorical,2 categories,0.0
+number_of_vehicles,Number of vehicles involved,Numeric,1 to 26,0.0
+number_of_casualties,Number of casualties (leakage - not a model feature),Numeric,1 to 142,0.0
+speed_limit,Speed limit of the road (mph),Categorical,6 categories,0.0
+road_type,"Road layout (single/dual carriageway, roundabout ...)",Categorical,5 categories,2.23
+road_class_group,"Class of the first road (Motorway, A, B, C, Unclassified)",Categorical,5 categories,0.0
+junction_group,At a junction or not,Categorical,2 categories,7.48
+junction_detail_label,Type of junction,Categorical,6 categories,7.48
+junction_control_label,How the junction is controlled,Categorical,5 categories,3.81
+pedestrian_crossing_label,Pedestrian crossing facility within 50 m,Categorical,8 categories,5.37
+light_conditions_label,Lighting at the time of the collision,Categorical,5 categories,0.01
+light_group,Daylight or darkness,Categorical,2 categories,0.01
+weather_conditions_label,Weather at the time of the collision,Categorical,8 categories,2.73
+weather_group,"Weather grouped (Fine, Rain, Snow, Fog, Other)",Categorical,5 categories,2.73
+road_surface_conditions_label,Road surface condition,Categorical,5 categories,2.15
+surface_group,"Surface grouped (Dry, Wet, Snow or ice, Other hazard)",Categorical,4 categories,2.15
+carriageway_hazards_label,Object or hazard in the carriageway,Categorical,12 categories,4.51
+area,Urban or rural area,Categorical,2 categories,0.0
+trunk_road_flag_label,Trunk road (national network) or not,Categorical,2 categories,7.01
+police_force_label,Police force that recorded the collision,Categorical,44 categories,0.0
+hour,Hour of the day (0-23),Numeric,0 to 23,0.0
+weekday,Day of the week,Categorical,7 categories,0.0
+is_weekend,1 = Saturday or Sunday,Categorical,2 categories,0.0
+rush_hour,1 = weekday 07:00-09:59 or 16:00-18:59,Categorical,2 categories,0.0
+time_band,Night / Morning / Afternoon / Evening,Categorical,4 categories,0.0
+month_name,Month,Categorical,12 categories,0.0
+season,Season (Winter = Dec-Feb),Categorical,4 categories,0.0
+longitude,Longitude of the collision,Numeric,-7.41772 to 1.75622,0.0
+latitude,Latitude of the collision,Numeric,49.9122 to 60.3453,0.0
