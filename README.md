@@ -34,6 +34,7 @@ This project analyses all **202,452 police-reported injury collisions in Great B
 | `01_data_preparation.ipynb` | Afnan AlNasser | Merges 2024 + 2025, decodes all codes with the DfT data guide, converts hidden missing codes to real missing values, adds the KSI targets, time features and grouped categories | `collisions_2024_2025_prepared.csv.gz`, `missing_values_report.csv`, `data_dictionary.csv` |
 | `Member3_Data_Cleaning.ipynb` | Roaa Almansour | Handles the remaining missing values (codes and `Unknown` categories, indicator columns), checks data types, ranges and dates, removes redundant label columns | `UK_Road_Accidents_Cleaned_2024_2025.csv.gz` |
 | `02_time_factors_member1.ipynb` | Afnan AlNasser | KSI rate by hour, weekday, month and rush hour; chi-square and z-tests; 2024 vs 2025 comparison | `fig2_ksi_by_hour.png` |
+| `03_environmental_factors_member2.ipynb` | Lulu AlMaghlouth | KSI rate by light, weather and road surface; chi-square with Cramér's V; pairwise z-tests; darkness within urban/rural areas; recorded vs severity-adjusted year change | `fig3_ksi_by_environment.png` |
 | `Member4_EDA.ipynb` | Shahad AlShammary | Descriptive statistics, outliers, severity by year and the seven hypothesis tests (Table III) | `fig1_severity_by_year.png` |
 
 ## Data
@@ -60,6 +61,6 @@ Contains public sector information licensed under the [Open Government Licence v
 2. Open each notebook in Google Colab and choose **Runtime → Run all**, in the order of the table above.
 3. Allow Google Drive access when asked. Each notebook reads its inputs from, and saves its outputs to, that folder.
 
-If a notebook cannot find a file, check the file path in its first code cell and point it to your folder. The two analysis notebooks read the cleaned file, so run `Member3_Data_Cleaning.ipynb` first.
+If a notebook cannot find a file, check the file path in its first code cell and point it to your folder. The analysis notebooks read the prepared or cleaned file, so run `01_data_preparation.ipynb` and `Member3_Data_Cleaning.ipynb` first.
 
 **Requirements:** Python 3, pandas, NumPy, Matplotlib, Seaborn, SciPy, openpyxl (all preinstalled in Google Colab).
